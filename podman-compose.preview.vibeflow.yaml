@@ -1,0 +1,10 @@
+services:
+  web:
+    image: caddy:2-alpine
+    pull_policy: missing
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./Caddyfile.preview.vibeflow:/etc/caddy/Caddyfile:ro
+      - ./:/srv:ro
+    command: ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]
