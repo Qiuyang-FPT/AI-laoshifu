@@ -1,0 +1,122 @@
+# =============================================================================
+# Dependencies
+# =============================================================================
+node_modules/
+.pnpm-store/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env.venv/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+.eggs/
+bower_components/
+
+# =============================================================================
+# Environment & Secrets
+# =============================================================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.preview
+*.pem
+*.key
+secrets/
+credentials.json
+.npmrc
+.yarnrc
+
+# =============================================================================
+# Build & Distribution
+# =============================================================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# =============================================================================
+# IDE & Editor
+# =============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# =============================================================================
+# OS Files
+# =============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# Logs & Debug
+# =============================================================================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =============================================================================
+# Testing & Coverage
+# =============================================================================
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+coverage/
+*.cover
+*.py,cover
+.hypothesis/
+.nyc_output/
+test-results/
+playwright-report/
+
+# =============================================================================
+# AI & Agent Workspace
+# =============================================================================
+# These are SHARED project config, not machine state: a repository commits its
+# agents, skills and settings so every collaborator (and the cloud session) gets
+# them. Only the per-machine files inside them are ignored. `vibeflow.json` is
+# not listed at all — neither the project's root config nor
+# `.vibeflow/vibeflow.json` — because both are the project's to keep.
+.claude/settings.local.json
+.cursor/
+.aider/
+.continue/
+.copilot/
+
+# =============================================================================
+# Temporary & Cache
+# =============================================================================
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+.turbo/
+*.tsbuildinfo
+
